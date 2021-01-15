@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="769240b1-d687-4024-9a66-4b39222d5f4f" name="Default Changelist" comment="" />
+    <list default="true" id="769240b1-d687-4024-9a66-4b39222d5f4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +20,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpServers">
     <servers>
@@ -140,6 +146,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mHqkLWWo6tN0GVuet4uuomWqjy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -183,7 +190,7 @@
       <workItem from="1609333125339" duration="8162000" />
       <workItem from="1609954503837" duration="7834000" />
       <workItem from="1610635037701" duration="3896000" />
-      <workItem from="1610705517249" duration="12538000" />
+      <workItem from="1610705517249" duration="13510000" />
     </task>
     <servers />
   </component>
@@ -203,18 +210,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="433" y="0" width="1011" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1609333171654" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610726875081">
+    <state x="147" y="65" key="DiffContextDialog" timestamp="1610728891793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610726875081" />
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1610728891793" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610728303989">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610728303989" />
     <state x="593" y="332" key="Github.CreateGistDialog" timestamp="1610727777294">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="593" y="332" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1610727777294" />
-    <state x="647" y="310" key="Github.ShareDialog" timestamp="1610726595169">
+    <state x="647" y="310" key="Github.ShareDialog" timestamp="1610728374029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1610726595169" />
+    <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1610728374029" />
     <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1609334707052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -231,6 +242,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609334707052" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610728895443">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610728895443" />
     <state x="668" y="289" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1609334500034">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
