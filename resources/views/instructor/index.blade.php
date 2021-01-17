@@ -2,29 +2,30 @@
 
 @section('content')
     <div class="container">
-        <?php @foreach ($instructors as $instructor) {  ?>
+        @foreach ($instructors as $instructor)
 
-        <div class="container">
-            <div class="card mb-3" >
-                <div class="row no-gutters">
-{{--                    <div class="col-md-4">--}}
+            <div class="container">
+                <div class="card mb-3" >
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="{{$instructor->photo}}" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h1 class="card-title">{{$instructor->name}}</h1>
+                                <p class="card-text">{{$instructor->description}}</p>
+                                <p class="card-text"><small class="text-muted">Vek: {{$instructor->age}}</small></p>
+{{--                                <a href="?c=Zamestnanci&a=delete&id=<?= $zamestnanec->getId()?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Zmazat</a>--}}
+{{--                                <a href="?c=Zamestnanci&a=edit&id=<?= $zamestnanec->getId()?>" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Upravit</a>--}}
 
-{{--                        <img src="<?= $instructor->getAge() ?>" class="card-img">--}}
-{{--                    </div>--}}
-{{--                        <div class="card-body">--}}
-                            <h1 class="card-title">{{$instructor->name}}</h1>
-{{--                            <p class="card-text">{{$instructor->getDescription()}}</p>--}}
-{{--                            <p class="card-text"><small class="text-muted">Vek: <?= $instructor->getAge() ?></small></p>--}}
-{{--                            <a href="?c=Zamestnanci&a=delete&id=<?= $instructor->getIdInstuctor()?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Zmazat</a>--}}
-{{--                            <a href="?c=Zamestnanci&a=edit&id=<?= $instructor->getIdInstuctor()?>" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Upravit</a>--}}
-{{--                        </div>--}}
+                            </div>
+                        </div>
 
-{{--                </div>--}}
+                    </div>
+                </div>
             </div>
 
-        </div>
         @endforeach
-            <?php } ?>
     </div>
 @endsection
 
