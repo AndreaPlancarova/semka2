@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('review', [App\Http\Controllers\ReviewController::class, 'index'])->name('review');
+Route::get('instructor', [App\Http\Controllers\InstructorsController::class, 'index'])->name('instructor');
 
 Auth::routes();
 
@@ -26,3 +28,5 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('user', UserController::class);
     Route::get('user/{user}/delete', [UserController::class, 'destroy'])->name('user.delete');
 });
+
+

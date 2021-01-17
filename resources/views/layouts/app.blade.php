@@ -21,10 +21,11 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+{{--                    {{ config('app.name', 'Laravel') }}--}}
+                    SKI&FUN
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -33,10 +34,54 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        @auth
+                        @can('viewAny', \App\Models\User::class)
+{{--                        @auth--}}
                             <a class="nav-link" href="{{ route('user.index') }}">{{__('Users')}}</a>
-                        @endauth
+{{--                        @endauth--}}
+                        @endcan
                     </ul>
+
+                    <ul class="navbar-nav mr-auto">
+                        <a class="nav-link" href="{{ route('review') }}">{{__('Reviews')}}</a>
+                    </ul>
+                    <ul class="navbar-nav mr-auto">
+                        <a class="nav-link" href="{{ route('instructor') }}">{{__('Instructors')}}</a>
+                    </ul>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Gallery
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="?c=home&a=Beatles">Beatles</a>
+                                    <a class="dropdown-item" href="?c=home&a=Bear">Bears</a>
+                                </div>
+                            </li>
+
+                            <a class="nav-link" href="?c=home">Domov</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Modely
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="?c=Semka">Prehlad</a>
+                                    <a class="dropdown-item" href="?c=Semka&a=Add">Pridat model</a>
+                                </div>
+                            </li>
+
+
+                            <a class="nav-link" href="?c=Zamestnanci">Nasi instruktori</a>
+                            <a class="nav-link" href="?c=Zamestnanci&a=Add">Pridat zamestnanca</a>
+
+                            <a class="nav-link" href="?c=home&a=contact">Kontakt</a>
+
+
+                        </ul>
+
+                    </div>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
