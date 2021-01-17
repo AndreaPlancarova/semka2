@@ -1184,7 +1184,7 @@
       <ColNames>uuid</ColNames>
       <UnderlyingIndexName>failed_jobs_uuid_unique</UnderlyingIndexName>
     </key>
-    <column id="367" parent="339" name="id_instructor">
+    <column id="367" parent="339" name="id">
       <Position>1</Position>
       <DataType>int(15)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1209,7 +1209,7 @@
     </column>
     <key id="372" parent="339" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id_instructor</ColNames>
+      <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="373" parent="340" name="id">

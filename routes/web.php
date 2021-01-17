@@ -18,7 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('review', [App\Http\Controllers\ReviewController::class, 'index'])->name('review');
-Route::get('instructor', [App\Http\Controllers\InstructorsController::class, 'index'])->name('instructor');
+Route::resource('instructor', \App\Http\Controllers\InstructorController::class);
+Route::get('instructor', [App\Http\Controllers\InstructorController::class, 'index'])->name('instructor');
+
 
 Auth::routes();
 

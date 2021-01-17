@@ -5,14 +5,22 @@ namespace App\Models;
 
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Instructor extends Model
+class Instructor extends Authenticatable
 {
     protected $id_instuctor;
     protected $name;
     protected $description;
     protected $age;
     protected $photo;
+
+//    protected $fillable = [
+//        'name',
+//        'description',
+//        'age',
+//        'photo'
+//    ];
 
     /**
      * Zamestnanec constructor.
@@ -36,7 +44,7 @@ class Instructor extends Model
 
     static public function setDbColumns()
     {
-        return ['id_instructor', 'name', 'photo', 'age', 'description'];
+        return ['id_instructor', 'name', 'photo' , 'description', 'age'];
     }
 
     static public function setTableName()
