@@ -2,7 +2,9 @@
 
 @section('content')
     <div class="container">
-        @foreach ($instructors as $instructor)
+        <a href="{{route('instructor.create')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Create</a>
+
+    @foreach ($instructors as $instructor)
 
             <div class="container">
                 <div class="card mb-3" >
@@ -15,7 +17,7 @@
                                 <h1 class="card-title">{{$instructor->name}}</h1>
                                 <p class="card-text">{{$instructor->description}}</p>
                                 <p class="card-text"><small class="text-muted">Vek: {{$instructor->age}}</small></p>
-{{--                                <a href="?c=Zamestnanci&a=delete&id=<?= $zamestnanec->getId()?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Zmazat</a>--}}
+                                <a href="{{route('instructor.edit', $instructor->id)}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Edit</a>
 {{--                                <a href="?c=Zamestnanci&a=edit&id=<?= $zamestnanec->getId()?>" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Upravit</a>--}}
 
                             </div>

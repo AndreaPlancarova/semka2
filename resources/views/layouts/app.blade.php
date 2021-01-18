@@ -35,9 +35,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         @can('viewAny', \App\Models\User::class)
-{{--                        @auth--}}
+                        @auth
                             <a class="nav-link" href="{{ route('user.index') }}">{{__('Users')}}</a>
-{{--                        @endauth--}}
+                        @endauth
                         @endcan
                     </ul>
 
