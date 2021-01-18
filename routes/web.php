@@ -17,10 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/instructor', function () {
+    return view('instructor.index');
+});
 Route::get('review', [App\Http\Controllers\ReviewController::class, 'index'])->name('review');
-Route::resource('instructor', \App\Http\Controllers\InstructorController::class);
-Route::get('/instructor', [App\Http\Controllers\InstructorController::class, 'index'])->name('instructor');
-Route::get('instructor/{instructor}/edit', [\App\Http\Controllers\InstructorController::class, 'edit'])->name('instructor.edit');
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -28,7 +29,16 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('user', UserController::class);
     Route::get('user/{user}/delete', [UserController::class, 'destroy'])->name('user.delete');
-    //Route::resource('instructor', \App\Http\Controllers\InstructorController::class);
+    Route::resource('instructor', \App\Http\Controllers\InstructorController::class);
+    Route::get('instructor', [App\Http\Controllers\InstructorController::class, 'index'])->name('instructor');
+    Route::get('instructor/{instructor}/delete', [\App\Http\Controllers\InstructorController::class, 'destroy'])->name('instructor.delete');
 });
+
+//Route::group(['middleware' => ['web']],  function() {
+//    Route::resource('instructor', \App\Http\Controllers\InstructorController::class);
+//    Route::get('instructor', [App\Http\Controllers\InstructorController::class, 'index'])->name('instructor');
+////    Route::get('instructor/create', [\App\Http\Controllers\InstructorController::class, 'create'])->name('instructor.create');
+////    Route::get('instructor/{instructor}/edit', [\App\Http\Controllers\InstructorController::class, 'edit'])->name('instructor.edit');
+//});
 
 

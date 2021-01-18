@@ -30,7 +30,8 @@ class UserPolicy
      */
     public function view(User $user, User $model)
     {
-        return Auth::user()->name == 'admin';
+        return true;
+//        return Auth::user()->name == 'admin';
     }
 
     /**

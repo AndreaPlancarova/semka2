@@ -3,14 +3,23 @@
 
 namespace App\Models;
 
+use App\Http\Middleware\Authenticate;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+
 use Illuminate\Notifications\Notifiable;
 
-class Instructor extends Authenticatable
+class Instructor extends Model
 {
     use Notifiable;
 
+    const UPDATED_AT = false;
+    public $timestamps = false;
+    //const CREATED_AT = false;
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'name',
         'photo',

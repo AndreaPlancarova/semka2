@@ -14,14 +14,23 @@
         </div>
 
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">Popis</label>
-            <textarea class="form-control" name="popis" >{{ old('description', @$model->description) }}</textarea>
-        </div>
+            <label for="photo">Photo</label>
+            <input type="text" class="form-control" id="photo" name="photo" placeholder="Photo" value="{{ old('photo', @$model->photo) }}">
 
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Vek</label>
-            <textarea class="form-control" name="vek">{{ old('age', @$model->age) }}</textarea>
         </div>
-        <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age" name="age" placeholder="Age" value="{{ old('age', @$model->age) }}">
+
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" name="description" placeholder="Descriptiom" value="{{ old('description', @$model->description) }}">
+
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary form-control">
+        </div>
     </form>
 </div>
+

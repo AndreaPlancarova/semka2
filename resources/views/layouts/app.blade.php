@@ -45,7 +45,11 @@
                         <a class="nav-link" href="{{ route('review') }}">{{__('Reviews')}}</a>
                     </ul>
                     <ul class="navbar-nav mr-auto">
+
+                        @auth
                         <a class="nav-link" href="{{ route('instructor') }}">{{__('Instructors')}}</a>
+                        @endauth
+
                     </ul>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
