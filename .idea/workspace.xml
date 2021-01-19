@@ -15,14 +15,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="769240b1-d687-4024-9a66-4b39222d5f4f" name="Default Changelist" comment="css a js nefunkcny">
+    <list default="true" id="769240b1-d687-4024-9a66-4b39222d5f4f" name="Default Changelist" comment="predfinal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InstructorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InstructorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/instructor/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/instructor/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/message/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/message/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611064413664</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="predfinal">
+      <created>1611067424335</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611067424336</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +297,8 @@
     <MESSAGE value="uprava kodu, spravena autentifikacia" />
     <MESSAGE value="comit staro-novych tried" />
     <MESSAGE value="css a js nefunkcny" />
-    <option name="LAST_COMMIT_MESSAGE" value="css a js nefunkcny" />
+    <MESSAGE value="predfinal" />
+    <option name="LAST_COMMIT_MESSAGE" value="predfinal" />
   </component>
   <component name="WindowStateProjectService">
     <state x="626" y="69" key="#SSH_Configurations" timestamp="1609236394643">
@@ -377,10 +385,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="132" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1611038418077" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611045432562">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611067429510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611045432562" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611067429510" />
     <state x="668" y="289" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1609334500034">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

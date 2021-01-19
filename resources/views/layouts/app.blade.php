@@ -37,18 +37,24 @@
                     <ul class="navbar-nav mr-auto">
                         @can('viewAny', \App\Models\User::class)
                         @auth
-                            <a class="nav-link" href="{{ route('user.index') }}">{{__('Users')}}</a>
+                            <li>
+                                <a class="nav-link" href="{{ route('user.index') }}">{{__('Users')}}</a>
+                            </li>
                         @endauth
                         @endcan
                     </ul>
 
                     <ul class="navbar-nav mr-auto">
+                        <li>
                         <a class="nav-link" href="{{ route('review') }}">{{__('Reviews')}}</a>
+                        </li>
                     </ul>
                     <ul class="navbar-nav mr-auto">
 
                         @auth
+                            <li>
                         <a class="nav-link" href="{{ route('instructor') }}">{{__('Instructors')}}</a>
+                            </li>
                         @endauth
 
                     </ul>
@@ -56,12 +62,14 @@
                     <ul class="navbar-nav mr-auto">
 
                         @auth
+                            <li>
                             <a class="nav-link" href="{{ route('message') }}">{{__('Messages')}}</a>
+                            </li>
                         @endauth
 
                     </ul>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse">
                         <ul class="navbar-nav mr-auto">
 
                             <li class="nav-item dropdown">
@@ -73,8 +81,9 @@
                                     <a class="dropdown-item" href="{{ route('home.bears') }}">Bears</a>
                                 </div>
                             </li>
-
+                            <li>
                             <a class="nav-link" href="{{ route('home.contact') }}">Kontakt</a>
+                            </li>
                         </ul>
 
                     </div>
@@ -96,7 +105,7 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{ Auth::user()->name }}
                                 </a>
 

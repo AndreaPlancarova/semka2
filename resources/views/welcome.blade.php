@@ -209,7 +209,7 @@
     <div class="container">
         <div class="paragrafText">
             <h5 class="card-title" id="aboutUs">About us</h5>
-            <p class="card-text" id="paragrafText">
+            <p class="paragrafText card-text">
                 Suspendisse potenti. Praesent iaculis, velit vitae volutpat facilisis, nibh odio aliquam tortor,
                 vel suscipit nisl metus vitae est.
                 In eu justo et velit suscipit posuere.
@@ -218,7 +218,7 @@
                 Integer aliquet placerat arcu id maximus.
                 Duis lacinia, mi vitae blandit tempus, nisl risus pretium neque, in condimentum erat eros id nunc.
             </p>
-            <p class="card-text" id="paragrafText">
+            <p class="paragrafText card-text">
                 Suspendisse potenti. Praesent iaculis, velit vitae volutpat facilisis, nibh odio aliquam tortor,
                 vel suscipit nisl metus vitae est.
                 In eu justo et velit suscipit posuere.
@@ -227,7 +227,7 @@
                 Integer aliquet placerat arcu id maximus.
                 Duis lacinia, mi vitae blandit tempus, nisl risus pretium neque, in condimentum erat eros id nunc.
             </p>
-            <p class="card-text" id="paragrafText">
+            <p class="paragrafText card-text">
                 Suspendisse potenti. Praesent iaculis, velit vitae volutpat facilisis, nibh odio aliquam tortor,
                 vel suscipit nisl metus vitae est.
                 In eu justo et velit suscipit posuere.
