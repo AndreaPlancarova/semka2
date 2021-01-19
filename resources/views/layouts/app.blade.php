@@ -60,13 +60,12 @@
                                     Gallery
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="?c=home&a=Beatles">Beatles</a>
-                                    <a class="dropdown-item" href="?c=home&a=Bear">Bears</a>
+                                    <a class="dropdown-item" href="{{ route('home.beatles') }}">Beatles</a>
+                                    <a class="dropdown-item" href="{{ route('home.bears') }}">Bears</a>
                                 </div>
                             </li>
 
-                            <a class="nav-link" href="?c=home">Domov</a>
-                            <a class="nav-link" href="?c=home&a=contact">Kontakt</a>
+                            <a class="nav-link" href="{{ route('home.contact') }}">Kontakt</a>
                         </ul>
 
                     </div>
@@ -115,7 +114,7 @@
         </main>
     </div>
     <div>
-        <a href="" id="kontakt"></a>
+        <a href="{{ route('home.contact') }}" id="kontakt"></a>
     </div>
 </body>
 </html>

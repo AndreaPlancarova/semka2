@@ -2,15 +2,16 @@
 
 @section('content')
     <div class="container">
-        <a href="{{route('instructor.create')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Create</a>
-
+        @can('viewAny', \App\Models\User::class)
+        <a href="{{route('instructor.create')}}" class="btn btn-primary btn-lg active" id="addInstructorButton" role="button" aria-pressed="true">Create new instructor</a>
+        @endcan
     @foreach ($instructors as $instructor)
 
             <div class="container">
                 <div class="card mb-3" >
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="{{$instructor->photo}}" class="card-img">
+                            <img src="{{$instructor->photo}}" class="card-img" id="obrProfilovka">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">

@@ -13,8 +13,7 @@ class ReviewController extends Controller
 {
     public function __construct()
     {
-        //$this->middleware('auth');
-        //$this->authorizeResource(Review::class, 'review');
+        $this->middleware('web');
     }
 
     /**
@@ -58,6 +57,7 @@ class ReviewController extends Controller
         $id = auth()->user()->getAuthIdentifier();
         $review = new Review();
         $review->id = $id;
+        $review->author = User::find($id)->name;
         $review->description = $request->description;
         $review->save();
 
