@@ -10992,8 +10992,43 @@ body{
     margin-top: 0pt;
 }
 
-a {
-    color: #3490dc;
-    text-decoration: none;
-    background-color: transparent;
+.mail {
+    font-size: x-large;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+.messageFont {
+    font-size: 10pt;
+    font-style: italic;
+}
+
+.messageBackround {
+    padding: initial;
+    margin: initial;
+    background: powderblue;
+    border-block-width: revert;
+}
+.writeAMessage {
+    background: lightslategrey;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: turquoise;
+}
+
+.contactInfo {
+    background: whitesmoke;
+    border: 10px black;
+}
+
+
+.popisInstruktor {
+    font-size: xx-large;
+    font-weight: 100;
+    text-align: revert;
+}
+
+.menoInstructor {
+    font-weight: bolder;
+    color: teal;
 }

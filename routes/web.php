@@ -35,6 +35,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('review', [App\Http\Controllers\ReviewController::class, 'index'])->name('review');
     Route::get('review/{review}/delete', [\App\Http\Controllers\ReviewController::class, 'destroy'])->name('review.delete');
 
+    Route::resource('message', \App\Http\Controllers\MessageController::class);
+    Route::get('message', [App\Http\Controllers\MessageController::class, 'index'])->name('message');
+    Route::get('message/{message}/delete', [\App\Http\Controllers\MessageController::class, 'destroy'])->name('message.delete');
 });
 
 

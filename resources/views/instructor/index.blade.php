@@ -15,8 +15,8 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h1 class="card-title">{{$instructor->name}}</h1>
-                                <p class="card-text">{{$instructor->description}}</p>
+                                <h1 class="menoInstructor card-title">{{$instructor->name}}</h1>
+                                <p class="popisInstruktor card-text">{{$instructor->description}}</p>
                                 <p class="card-text"><small class="text-muted">Vek: {{$instructor->age}}</small></p>
 
                                 @can('viewAny', \App\Models\User::class)

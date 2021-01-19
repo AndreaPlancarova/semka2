@@ -1,24 +1,3 @@
-// class Reviews {
-//  constructor() {
-//
-//  }
-//  async getUsers() {
-//      try {
-//          let response = await fetch('?c=user');
-//          let data = await response.json();
-//
-//          var list = document.getElementById()
-//      } catch (e){
-//
-//      }
-//  }
-// }
-// document.addEventListener('DOMContentLoaded' , () => {
-//     var reviews = new Reviews();
-// });
-
-///
-
 $(document).ready(function(){
 
     // Fetch all records

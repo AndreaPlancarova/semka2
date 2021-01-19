@@ -1236,7 +1236,7 @@
       <Position>2</Position>
       <DataType>varchar(200)|0s</DataType>
     </column>
-    <column id="380" parent="342" name="content">
+    <column id="380" parent="342" name="description">
       <Position>3</Position>
       <DataType>varchar(500)|0s</DataType>
     </column>

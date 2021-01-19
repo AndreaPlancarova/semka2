@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="../../js/script.js" ></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -48,6 +49,14 @@
 
                         @auth
                         <a class="nav-link" href="{{ route('instructor') }}">{{__('Instructors')}}</a>
+                        @endauth
+
+                    </ul>
+
+                    <ul class="navbar-nav mr-auto">
+
+                        @auth
+                            <a class="nav-link" href="{{ route('message') }}">{{__('Messages')}}</a>
                         @endauth
 
                     </ul>
