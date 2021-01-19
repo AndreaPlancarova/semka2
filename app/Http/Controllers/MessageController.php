@@ -13,7 +13,6 @@ class MessageController extends \Illuminate\Routing\Controller
     public function __construct()
     {
        $this->middleware('web');
-//        $this->authorizeResource(Instructor::class, 'instructor');
     }
     /**
      * Display a listing of the resource.

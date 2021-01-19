@@ -60,7 +60,7 @@ class UserController extends Controller
     {
         // tu je validacia
         $request->validate([
-            'name' => 'required',
+            'name' => 'required|max:255',
             'email' => 'required|email|unique:users,email,',
             'password' => 'required|min:6|confirmed'
         ]);
@@ -105,10 +105,8 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //pridat alerty ze uzivatel bol pridany
-        // tu je validacia
         $request->validate([
-            'name' => 'required',
+            'name' => 'required|max:255',
             'email' => 'required|email|unique:users,email,' . $user->id,
             'password' => 'required|min:6|confirmed'
         ]);

@@ -118,6 +118,10 @@ class InstructorController extends Controller
 
     }
 
+    public function instructors() {
+        $instructor = Instructor::all();
+        return $this->json($instructor);
+    }
     /**
      * Remove the specified resource from storage.
      *

@@ -32,4 +32,7 @@
 
         @endforeach
     </div>
+    <div id="instructor">
+
+    </div>
 @endsection
