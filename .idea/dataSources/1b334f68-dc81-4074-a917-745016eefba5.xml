@@ -1077,7 +1077,7 @@
     <table id="343" parent="8" name="password_resets">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="344" parent="8" name="review"/>
+    <table id="344" parent="8" name="reviews"/>
     <table id="345" parent="8" name="users">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
@@ -1266,7 +1266,7 @@
       <ColNames>email</ColNames>
       <Type>btree</Type>
     </index>
-    <column id="385" parent="344" name="number">
+    <column id="385" parent="344" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1278,7 +1278,7 @@
     </column>
     <key id="387" parent="344" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>number</ColNames>
+      <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="388" parent="345" name="id">

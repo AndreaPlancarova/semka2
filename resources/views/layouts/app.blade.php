@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body id="body">
     <div id="app">
         <nav class="navbar sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -66,23 +66,7 @@
                             </li>
 
                             <a class="nav-link" href="?c=home">Domov</a>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Modely
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="?c=Semka">Prehlad</a>
-                                    <a class="dropdown-item" href="?c=Semka&a=Add">Pridat model</a>
-                                </div>
-                            </li>
-
-
-                            <a class="nav-link" href="?c=Zamestnanci">Nasi instruktori</a>
-                            <a class="nav-link" href="?c=Zamestnanci&a=Add">Pridat zamestnanca</a>
-
                             <a class="nav-link" href="?c=home&a=contact">Kontakt</a>
-
-
                         </ul>
 
                     </div>
@@ -129,6 +113,9 @@
         <main class="py-4">
             @yield('content')
         </main>
+    </div>
+    <div>
+        <a href="" id="kontakt"></a>
     </div>
 </body>
 </html>
