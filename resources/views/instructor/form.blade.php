@@ -1,3 +1,4 @@
+
 <div class="form-group text-danger">
     @foreach ($errors->all() as $error)
         {{ $error }}<br>
@@ -29,7 +30,7 @@
 
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-primary form-control">
+            <input type="submit" id="submit" class="btn btn-primary form-control">
         </div>
     </form>
 </div>

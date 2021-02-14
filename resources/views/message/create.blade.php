@@ -13,11 +13,11 @@
 
         <div class="form-group">
             <label for="description">Content</label>
-            <input type="text" class="form-control" id="description" name="description" placeholder="Here you can write your message" value="{{@$model->description}}">
+            <input type="text" class="form-control" id="message" name="description" placeholder="Here you can write your message" value="{{@$model->description}}">
 
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-primary form-control">
+            <input type="submit" id="submit" class="btn btn-primary form-control">
         </div>
     </form>
 </div>

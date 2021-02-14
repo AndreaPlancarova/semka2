@@ -12,7 +12,9 @@
             <input type="text" class="form-control" id="description" name="description" placeholder="Descriptiom" value="{{ old('description', @$model->description) }}">
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-primary form-control">
+            <button type="submit" id="submit" class="btn btn-primary">
+                Odoslat
+            </button>
         </div>
     </form>
 </div>

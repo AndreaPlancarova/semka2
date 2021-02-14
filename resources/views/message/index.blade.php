@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container">
-        <a href="{{route('message.create')}}" class="writeAMessage btn btn-primary btn-lg active" id="addInstructorButton" role="button" aria-pressed="true">Write a message</a>
+        <a href="{{route('message.create')}}" class="writeAMessage btn btn-primary btn-lg active" id="addMessageButton" role="button" aria-pressed="true">Write a message</a>
 
     @foreach ($messages as $message)
         @if(@Auth::user()->id == $message->id || @Auth::user()->name == 'admin')
@@ -13,7 +13,7 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h1 class="mail card-title">From: {{$message->email}}</h1>
-                                <p class="messageFont card-text">{{$message->description}}</p>
+                                <p id="message" class="messageFont card-text">{{$message->description}}</p>
                             </div>
                         </div>
                     </div>

@@ -24,7 +24,7 @@
     <div id="app">
         <nav class="navbar sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" id="home" href="{{ url('/') }}">
 {{--                    {{ config('app.name', 'Laravel') }}--}}
                     SKI&FUN
                 </a>
@@ -38,7 +38,7 @@
                         @can('viewAny', \App\Models\User::class)
                         @auth
                             <li>
-                                <a class="nav-link" href="{{ route('user.index') }}">{{__('Users')}}</a>
+                                <a class="nav-link" id="userButton" href="{{ route('user.index') }}">{{__('Users')}}</a>
                             </li>
                         @endauth
                         @endcan
@@ -46,14 +46,14 @@
 
                     <ul class="navbar-nav mr-auto">
                         <li>
-                        <a class="nav-link" href="{{ route('review') }}">{{__('Reviews')}}</a>
+                        <a class="nav-link" id="review" href="{{ route('review') }}">{{__('Reviews')}}</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav mr-auto">
 
                         @auth
                             <li>
-                        <a class="nav-link" href="{{ route('instructor') }}">{{__('Instructors')}}</a>
+                        <a class="nav-link" id="instructor" href="{{ route('instructor') }}">{{__('Instructors')}}</a>
                             </li>
                         @endauth
 
@@ -63,7 +63,7 @@
 
                         @auth
                             <li>
-                            <a class="nav-link" href="{{ route('message') }}">{{__('Messages')}}</a>
+                            <a class="nav-link" id="messages" href="{{ route('message') }}">{{__('Messages')}}</a>
                             </li>
                         @endauth
 
@@ -73,12 +73,12 @@
                         <ul class="navbar-nav mr-auto">
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" id="gallery" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Gallery
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="{{ route('home.beatles') }}">Beatles</a>
-                                    <a class="dropdown-item" href="{{ route('home.bears') }}">Bears</a>
+                                    <a class="dropdown-item" id="beatles" href="{{ route('home.beatles') }}">Beatles</a>
+                                    <a class="dropdown-item" id="bears" href="{{ route('home.bears') }}">Bears</a>
                                 </div>
                             </li>
                             <li>
@@ -94,13 +94,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link" id="login" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" id="register" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
@@ -109,8 +109,8 @@
                                     {{ Auth::user()->name }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                <div id="logout" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a id="logoutButton" class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
